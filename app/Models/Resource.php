@@ -10,7 +10,7 @@ class Resource extends Model
     /** @use HasFactory<\Database\Factories\ResourceFactory> */
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'location', 'total_quantity', 'is_active'];
+    protected $fillable = ['category_id','name', 'description', 'location', 'total_quantity', 'is_active'];
 
     protected function casts(): array
     {
